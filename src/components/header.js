@@ -1,42 +1,33 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import LogoTree from "../images/tree-icon.svg"
+import "./header.scss";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <header>
+    <div className="notice">
+      <p>TOGO & DINE-IN</p>
+      <span className="vertical-separator" />
+      <p>11 - 8 DAILY</p>
+      <span className="vertical-separator" />
+      <p>CLOSED SUNDAY</p>
+    </div>
+    <div className="nav">
+      <Link to="/"><img src={LogoTree} alt="Small Logo" /></Link>
+      <ul>
+        <li>
+          <Link to="/about">
+            About
+          </Link>
+        </li>  
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://cedars-of-lebanon.s3-us-west-2.amazonaws.com/Cedars_Takeout%20Menu_FINALJUN5.pdf">
+            Menu
+          </a>
+        </li>  
+      </ul>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

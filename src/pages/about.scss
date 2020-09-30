@@ -1,0 +1,23 @@
+.about-page {
+  display: flex;
+  flex-direction: row;
+
+  .takeout-image {
+    max-width: 900px;
+    width: 100%;
+    margin-right: 64px;
+  }
+
+
+  .text {
+    h1 {
+      font-family: "Grenoble Serial Bold", serif;
+    }
+
+    a {
+      text-decoration-line: underline;
+    }
+
+    max-width: 600px;
+  }
+}
