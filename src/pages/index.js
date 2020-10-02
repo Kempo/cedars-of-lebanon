@@ -11,11 +11,12 @@ import PhoneIcon from "../images/phone.svg"
 import "./index.scss"
 
 const preprocess = (str) => {
-  if(!str) {
+
+  if(!str || !str.replaceAll) {
     return "";
   }
 
-  const split = str.split(" ");
+  const split = (str.replaceAll("-", " ")).split(" ");
 
   const processed = split.reduce((acc, el) => {
     return `${acc} ${el.charAt(0).toUpperCase() + el.slice(1)}`;
@@ -101,7 +102,7 @@ const IndexPage = () => {
           {data.allFoodImages.edges.map((edge) => (
               <div key={edge.node.name} className="image-wrapper">
                 <Img className="dish" fluid={edge.node.childImageSharp.fluid} alt="Image" />
-                <p>{preprocess(edge.node.name.replaceAll("-", " "))}</p>
+                <p>{preprocess(edge.node.name)}</p>
               </div>
           ))}
         </div>
