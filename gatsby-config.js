@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/48x48.png`, // This path is relative to the root of the site.
+        icon: `src/images/512x512.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
@@ -33,7 +33,7 @@ module.exports = {
       options: {
         google: {
           families: ['Lato:ital,wght@0,400;1,700'],
-          text: 'abcdefghijklmnopqrstuvwxyz!1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+          text: 'abcdefghijklmnopqrstuvwxyz!1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ&'
         }
       }
     }

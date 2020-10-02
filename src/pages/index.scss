@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 128px;
 }
 
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0px 12px 0px 12px;
   font-family: "Lato", sans-serif;
 
@@ -32,16 +33,66 @@
 }
 
 .business-contact {
+  margin-bottom: 64px;
+}
 
-  .row {
+.gallery {
+  width: 80%;  
+  text-align: center;
+
+  h1 {
+    color: #E14046;
+    font-family: "Grenoble Serial Bold", serif;
+  }
+
+  p {
+    color: #535353;
+    font-size: 1.25em;
+    margin-bottom: 24px;
+  }
+
+  .images {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -12px;
 
-    .icon {
-      margin-right: 8px;
+    .image-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 12px;
+
+      p {
+        color: #535353;
+      }
+
+      .dish {
+        height: 100%;
+        border-radius: 3px;
+        margin-bottom: 6px;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery .images .image-wrapper .dish {
+    width: 250px;
+  }
+
+  .gallery h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .gallery .images .image-wrapper .dish {
+    width: 400px;
+  }
+
+  .gallery h1 {
+    font-size: 3.5em;
   }
 }

@@ -14,7 +14,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-        <main>{children}</main>
+      <main style={{ marginTop: 48, minHeight: "80vh" }}>{children}</main>
+      <footer>
+        <p>
+        Cedars of Lebanon
+        <br />
+        1319 NE 43rd St, Seattle, WA 98105
+        <br />
+        (206) 632-7708
+        </p>
+      </footer>
     </>
   )
 }

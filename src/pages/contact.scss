@@ -1,8 +1,8 @@
 @media screen and (max-width: 1000px) {
-  .about-page {
+  .contact-page {
     flex-direction: column;
 
-    .takeout-image {
+    .cover-photo {
       width: 100%;
       margin: 0px 0px 48px 0px;
     }
@@ -10,32 +10,33 @@
 }
 
 @media screen and (min-width: 1001px) {
-  .about-page {
+  .contact-page {
     flex-direction: row;
 
-    .takeout-image {
+    .cover-photo {
       width: 100%;
       min-width: 400px;
-      max-width: 900px;
+      max-width: 800px;
       margin-right: 64px;
     }
   }
 }
 
-.about-page {
+.contact-page {
   display: flex;
   margin-bottom: 128px;
 
-  .text {
+  .contact-info {
+    width: 100%;
+    max-width: 500px;
+
     h1 {
-      color: #E14046;
       font-family: "Grenoble Serial Bold", serif;
+      color: #E14046;
     }
 
     a {
       text-decoration-line: underline;
     }
-
-    max-width: 600px;
   }
 }

@@ -3,6 +3,30 @@
   src: url("../fonts/grenoble-serial-bold.woff2");
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: #535353;
+
+  .icon {
+    margin-right: 8px;
+  }
+
+  a {
+    color: #535353;
+
+  }
+}
+
+footer {
+  padding: 24px 48px;
+  background-color: #009B58;
+  color: white;
+}
+
 .body-content {
   margin: 0px 48px;
 }

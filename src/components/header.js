@@ -6,7 +6,7 @@ import "./header.scss";
 const Header = () => (
   <header>
     <div className="notice">
-      <p>TOGO & DINE-IN</p>
+      <p>TAKEOUT & DINE-IN</p>
       <span className="vertical-separator" />
       <p>11 - 8 DAILY</p>
       <span className="vertical-separator" />
@@ -16,15 +16,20 @@ const Header = () => (
       <Link to="/"><img src={LogoTree} alt="Small Logo" /></Link>
       <ul>
         <li>
-          <Link to="/about">
-            About
-          </Link>
-        </li>  
-        <li>
           <a target="_blank" rel="noopener noreferrer" href="https://cedars-of-lebanon.s3-us-west-2.amazonaws.com/Cedars_Takeout%20Menu_FINALJUN5.pdf">
             Menu
           </a>
-        </li>  
+        </li>
+        <li>
+          <Link to="/about">
+            About
+          </Link>
+        </li> 
+        <li>
+          <Link to="/contact">
+            Contact
+          </Link>
+        </li>       
       </ul>
     </div>
   </header>
