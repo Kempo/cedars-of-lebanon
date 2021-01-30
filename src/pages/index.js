@@ -11,7 +11,6 @@ import PhoneIcon from "../images/phone.svg"
 import "./index.scss"
 
 const preprocess = (str) => {
-
   if(!str || !str.replaceAll) {
     return "";
   }
@@ -22,10 +21,7 @@ const preprocess = (str) => {
     return `${acc} ${el.charAt(0).toUpperCase() + el.slice(1)}`;
   }, "")
 
-  // const processed = split.map(word => preprocess(word));
-
   return processed;
-  // return noHyphen.charAt(0).toUpperCase() + noHyphen.slice(1);
 }
 
 const IndexPage = () => {
@@ -51,7 +47,7 @@ const IndexPage = () => {
           node {
             name
             childImageSharp {
-              fluid(quality: 100) {
+              fluid(maxWidth: 350, quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -64,7 +60,7 @@ const IndexPage = () => {
   return (
     <Layout>
     <SEO title="Seattle's best gyros & falafels" />
-    <div className="main">
+    <div className="content">
       <div className="center">
         <img className="main-logo" src={CedarsLogo} alt="Cedars of Lebanon logo" />
         <div className="text">

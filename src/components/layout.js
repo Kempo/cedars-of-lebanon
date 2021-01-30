@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main style={{ marginTop: 48, minHeight: "80vh" }}>{children}</main>
+      <main>{children}</main>
       <footer>
         <p>
         Cedars of Lebanon

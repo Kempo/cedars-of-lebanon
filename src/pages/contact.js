@@ -13,7 +13,7 @@ const Contact = () => {
     query {
       outside: file(relativePath: {eq: "restaurant/outside.jpg"}) {
         childImageSharp {
-          fluid(quality: 100, fit: COVER) {
+          fluid(quality: 80, fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
